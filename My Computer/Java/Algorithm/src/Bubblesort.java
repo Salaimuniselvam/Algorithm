@@ -21,10 +21,6 @@ public class Bubblesort {
 
         Scanner reader= new Scanner(System.in);
 
-//        char[] sms={'s','a','s','a','r'};
-//        System.out.println(sms);
-//        Arrays.sort(sms);
-//        System.out.println(sms);
         System.out.println("Enter the No of Elements of Array");
         int n=  reader.nextInt();
         int [] array= new int[n];
