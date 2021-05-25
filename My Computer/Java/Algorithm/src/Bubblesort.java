@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Bubblesort {
 
@@ -17,12 +18,20 @@ public class Bubblesort {
     }
 
     public static void main(String[] args){
-        int [] array={1,2,3,4,5,1};
+
+        Scanner reader= new Scanner(System.in);
 
 //        char[] sms={'s','a','s','a','r'};
 //        System.out.println(sms);
 //        Arrays.sort(sms);
 //        System.out.println(sms);
+        System.out.println("Enter the No of Elements of Array");
+        int n=  reader.nextInt();
+        int [] array= new int[n];
+        System.out.println("Enter the Elements Of Array");
+        for(int i=0; i<=(n-1);i++){
+            array[i]=reader.nextInt();
+        }
 
         System.out.println("Before Bubble Sort..");
         for (int i=0;i< array.length;i++){
