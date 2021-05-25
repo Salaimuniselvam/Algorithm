@@ -19,6 +19,7 @@ public class SelectionSort {
             array[i]=temp;
 
 
+
         }
 
     }
@@ -46,6 +47,11 @@ public class SelectionSort {
         for(int i=0;i<n;i++){
             System.out.print(array[i] + " ");
         }
+        System.out.println();
+
+
+
+
 
     }
 }
