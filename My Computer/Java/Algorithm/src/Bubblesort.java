@@ -1,18 +1,25 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Bubble Sort Algorithm
+
 public class Bubblesort {
 
     public  static void bubblesort(int[] array){
         int n= array.length,temp=0;
+
         for(int i=0;i<n;i++){
+            int flag=0;
             for(int j=1;j<n-i;j++){
                 if(array[j-1]>array[j]){
                     temp=array[j-1];
                     array[j-1]=array[j];
                     array[j]=temp;
+                    flag=1;
                 }
-
+            }
+            if (flag==0){
+                break;
             }
         }
     }
@@ -41,3 +48,10 @@ public class Bubblesort {
         }
     }
 }
+
+
+
+//        char[] sms={'s','a','s','a','r'};
+//        System.out.println(sms);
+//        Arrays.sort(sms);
+//        System.out.println(sms);
